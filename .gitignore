@@ -1,0 +1,23 @@
+# Ignore everything at the repository root unless explicitly allowed.
+/*
+
+# Repository rules and user sources.
+!/.gitignore
+!/User/
+
+# Project configuration.
+!/*.ioc
+!/*.ld
+!/.config.yaml
+!/config.yaml
+!/CMakeLists.txt
+
+# Track LibXR submodule metadata and its commit pointer.
+!/.gitmodules
+!/Middlewares/
+/Middlewares/*
+!/Middlewares/Third_Party/
+/Middlewares/Third_Party/*
+!/Middlewares/Third_Party/LibXR
+
+!/README.md

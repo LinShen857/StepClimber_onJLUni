@@ -1,0 +1,81 @@
+generator: 6.0.1
+IWDG:
+  iwdg1:
+    timeout_ms: 1000
+    feed_interval_ms: 250
+Watchdog:
+  run_as_thread: true
+  feed_interval_ms: 250
+  thread_stack_depth: 1024
+  thread_priority: 1
+terminal_source: ''
+software_timer:
+  priority: 1
+  stack_depth: 1024
+SPI:
+  spi2:
+    tx_buffer_size: 32
+    rx_buffer_size: 32
+    dma_section: '.ram_d2'
+    dma_enable_min_size: 3
+  spi6:
+    tx_buffer_size: 128
+    rx_buffer_size: 128
+    dma_section: '.ram_d3'
+    dma_enable_min_size: 3
+USART:
+  uart5:
+    tx_buffer_size: 128
+    rx_buffer_size: 128
+    dma_section: '.ram_d2'
+    tx_queue_size: 5
+  usart1:
+    tx_buffer_size: 128
+    rx_buffer_size: 128
+    dma_section: '.ram_d2'
+    tx_queue_size: 5
+  usart10:
+    tx_buffer_size: 128
+    rx_buffer_size: 128
+    dma_section: '.ram_d2'
+    tx_queue_size: 5
+  usart2:
+    tx_buffer_size: 128
+    rx_buffer_size: 128
+    dma_section: '.ram_d2'
+    tx_queue_size: 5
+  usart3:
+    tx_buffer_size: 128
+    rx_buffer_size: 128
+    dma_section: '.ram_d2'
+    tx_queue_size: 5
+  uart7:
+    tx_buffer_size: 128
+    rx_buffer_size: 128
+    dma_section: '.ram_d2'
+    tx_queue_size: 5
+ADC:
+  adc1:
+    buffer_size: 32
+    dma_section: '.ram_d2'
+    vref: 3.3
+  adc3:
+    buffer_size: 32
+    dma_section: '.ram_d3'
+    vref: 3.3
+FDCAN:
+  fdcan1:
+    queue_size: 5
+  fdcan2:
+    queue_size: 5
+  fdcan3:
+    queue_size: 5
+Terminal:
+  read_buff_size: 32
+  max_line_size: 32
+  max_arg_number: 5
+  max_history_number: 5
+database:
+  enable: false
+  block_size: auto
+SYSTEM: FreeRTOS
