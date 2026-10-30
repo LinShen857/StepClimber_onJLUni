@@ -11,6 +11,8 @@
 !/.config.yaml
 !/config.yaml
 !/CMakeLists.txt
+!/CMakePresets.json
+!/cmake/
 
 # Track LibXR submodule metadata and its commit pointer.
 !/.gitmodules
