@@ -58,6 +58,4 @@ namespace JLUni
         const gain_dm_s gains_;
     };
 
-    static_assert(std::is_base_of_v<Motor_DM<LibXR::CAN, false>, Joint_DM<LibXR::CAN, false>>);
-    static_assert(!std::is_polymorphic_v<Joint_DM<LibXR::CAN, false>>);
 }

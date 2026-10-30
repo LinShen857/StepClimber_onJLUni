@@ -55,11 +55,13 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
         User/threads/chassis_thread.cpp
         User/threads/vqf_thread.cpp
         User/threads/roboarm_thread.cpp
+        User/threads/task_start.cpp
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
+        User
         User/algo
         User/drv
         User/midware
